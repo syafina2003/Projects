@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants - Group 2</title>
+    <style>
+        body {
+            background-color: Honeydew;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Horizontally center all elements */
+            justify-content: flex-start; /* Align content vertically */
+            height: 100vh; /* Use full viewport height */
+            margin: 120px 0; /* Add top and bottom spacing */
+        }
+
+        h1, h2 {
+            text-align: center; /* Center text */
+            margin: 5px; /* Remove default margin */
+        }
+
+        form {
+            margin-top: 0px; /* Add space between form and headings */
+            text-align: center; /* Center form content */
+        }
+
+        select, input[type="submit"] {
+            margin-top: 5px; /* Add spacing between elements in the form */
+            padding: 5px 20px;
+            font-size: 15px;
+        }
+
+        p {
+            text-align: center; /* Center text */
+            margin-top: 20px; /* Space below the form */
+        }
+    </style>
+    <script>
+        function updateFormAction() {
+            const house = document.getElementById('house').value;
+            const form = document.getElementById('houseForm');
+           
+            const urls = {
+                H1: "https://syafina2003.github.io/Projects/HOUSE%201.html",
+                H2: "https://syafina2003.github.io/Projects/HOUSE%202.html",
+                H3: "https://syafina2003.github.io/Projects/HOUSE%203.html", 
+                H4: "https://syafina2003.github.io/Projects/HOUSE%204.html",
+                H5: "https://syafina2003.github.io/Projects/HOUSE%205.html",
+                H6: "https://syafina2003.github.io/Projects/HOUSE%206.html",
+                H7: "https://syafina2003.github.io/Projects/HOUSE%207.html", 
+                H8: "https://syafina2003.github.io/Projects/HOUSE%208.html",
+                H9: "https://syafina2003.github.io/Projects/HOUSE%209.html",
+                H10: "https://syafina2003.github.io/Projects/HOUSE%2010.html",
+                H11: "https://syafina2003.github.io/Projects/HOUSE%2011.html", 
+                H12: "https://syafina2003.github.io/Projects/HOUSE%2012.html",
+                H13: "https://syafina2003.github.io/Projects/HOUSE%2013.html",
+                H14: "https://syafina2003.github.io/Projects/HOUSE%2014.html",
+                H15: "https://syafina2003.github.io/Projects/HOUSE%2015.html", 
+                H16: "https://syafina2003.github.io/Projects/HOUSE%2016.html",
+                H17: "https://syafina2003.github.io/Projects/HOUSE%2017.html",
+                H18: "https://syafina2003.github.io/Projects/HOUSE%2018.html",
+                H19: "https://syafina2003.github.io/Projects/HOUSE%2019.html", 
+                H20: "https://syafina2003.github.io/Projects/HOUSE%2020.html",
+            };
+
+            form.action = urls[house] || "#";
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Home Gardens Survey</h1>
+    <h2>Kg Changkat Lada phase 5, Perak</h2>
+    <h3>Group 2</h3>
+    <p>Select the house number:</p>
+
+    <!-- Form setup -->
+    <form id="houseForm" method="GET" target="_blank">
+        <select id="house" name="house" onchange="updateFormAction()">
+            <option value="H1">H1</option>
+            <option value="H2">H2</option>
+            <option value="H3">H3</option>
+            <option value="H4">H4</option>
+            <option value="H5">H5</option>
+            <option value="H6">H6</option>
+            <option value="H7">H7</option>
+            <option value="H8">H8</option>
+            <option value="H9">H9</option>
+            <option value="H10">H10</option>
+            <option value="H11">H11</option>
+            <option value="H12">H12</option>
+            <option value="H13">H13</option>
+            <option value="H14">H14</option>
+            <option value="H15">H15</option>
+            <option value="H16">H16</option>
+            <option value="H17">H17</option>
+            <option value="H18">H18</option>
+            <option value="H19">H19</option>
+            <option value="H20">H20</option>
+        </select>       
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>The button will open the page for the chosen house. ^_^</p>
+
+</body>
+</html>
+
